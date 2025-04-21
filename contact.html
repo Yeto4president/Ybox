@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ybox - Accueil</title>
+    <link rel="stylesheet" href="Slime.css">
+</head>
+<body>
+    <header>
+        <nav class="top-nav">
+            <div class="logo-section">
+                <img src="Ybox.jpeg" alt="Ybox logo">
+                <h1>Ybox</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="open.ybox.html">Accueil</a></li>
+                <li><a href="contact.html">Nous contacter</a></li>
+                <li><a href="playlist.html">Bibliothèque</a></li>
+                <li><a href="acc.ybox.html">S'inscrire</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form method="post" action="#" name="Quiz" class="box" id="QuizId" onsubmit="return submitQuiz()">
+        <fieldset id="informations">
+            <legend>Vos informations</legend>
+            <div>
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required>
+            </div>
+            <div>
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" required>
+            </div>
+            <div>
+                <label for="mail">Adresse mail :</label>
+                <input type="email" id="mail" name="mail" required>
+            </div>
+            <div>
+                Entrez votre demande :<br>
+                <textarea id="q3" name="q3" required></textarea>
+            </div>
+            <div>
+                <button type="submit" class="quiz">Envoyer</button>
+            </div>
+        </fieldset>
+    </form>
+
+    <footer>
+        <p>©️2024 Jonathan Ayeto.</p><br><p>Tous droits réservés.</p>
+        <p><a href="A_propos.html">À propos ?</a></p>
+    </footer>
+
+    <script>
+        function submitQuiz() {
+            alert("Votre message a été pris en compte.");
+            return true;
+        }
+    </script>
+</body>
+</html>

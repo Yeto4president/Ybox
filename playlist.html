@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ybox - Accueil</title>
+    <link rel="stylesheet" href="Slime.css">
+</head>
+<body>
+    <header>
+        <nav class="top-nav">
+            <div class="logo-section">
+                <img src="Ybox.jpeg" alt="Ybox logo">
+                <h1>Ybox</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="open.ybox.html">Accueil</a></li>
+                <li><a href="contact.html">Nous contacter</a></li>
+                <li><a href="playlist.html">Bibliothèque</a></li>
+                <li><a href="acc.ybox.html">S'inscrire</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="artists">
+        <h2>Artistes disponibles</h2>
+        <ul id="artist-list">
+            <li><a href="https://fr.wikipedia.org/wiki/Kodak_Black">Kodak Black</a></li>
+            <li><a href="https://fr.wikipedia.org/wiki/Denzel_Curry">Denzel Curry</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Lil_Loaded">     Lil Loaded</a></li>
+            <li><a href="https://fr.wikipedia.org/wiki/Menace_Santana">Menace Santana</a></li>
+            <li><a href="https://fr.wikipedia.org/wiki/A_Boogie_wit_da_Hoodie">A Boogie wit da Hoodie</a></li>
+
+        </ul>
+    </section>
+
+    <fieldset class="quiz">
+        <legend>Que souhaitez-vous écouter ?</legend>
+        <ol>
+            <li class="questions_style">Quel est votre genre préféré ?
+                <ul class="questions">
+                    <li>
+                        <input type="radio" id="q1_1" name="q1" value="a">
+                        <label for="q1_1" class="btn_radio">Rap</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="q1_2" name="q1" value="b">
+                        <label for="q1_2" class="btn_radio">Pop urbaine</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="q1_3" name="q1" value="c">
+                        <label for="q1_3" class="btn_radio">Rock n Roll</label>
+                    </li>
+                </ul>
+            </li>
+            <li class="questions_style">Quel est votre artiste préféré ? :<br>
+                <textarea id="q3" name="q3" required></textarea>
+            </li>
+            <li class="questions_style">À quelle fréquence écoutez-vous de la musique ? :<br>
+                <textarea id="q4" name="q4" required></textarea>
+            </li>
+        </ol>
+    </fieldset>
+
+    <div>
+        <button type="submit" class="quiz" onclick="submitQuiz()">Envoyer</button>
+    </div>
+    <footer>
+        <p>©️2024 Jonathan Ayeto.</p><br><p>Tous droits réservés.</p>
+        <p><a href="A_propos.html">À propos ?</a></p>
+    </footer>
+
+    <script>
+        function submitQuiz() {
+            const artistInput = document.getElementById("q3").value.trim().toLowerCase();
+            const artistLinks = document.querySelectorAll("#artist-list a");
+            let found = false;
+
+            artistLinks.forEach(link => {
+                if (link.textContent.trim().toLowerCase() === artistInput) {
+                    window.location.href = link.href;
+                    found = true;
+                }
+            });
+
+            if (!found) {
+                alert("Artiste non trouvé. Découvrez les pages de tous les artistes disponibles.");
+                window.location.href = "open.ybox.html";
+            }
+        }
+    </script>
+</body>
+</html>
+

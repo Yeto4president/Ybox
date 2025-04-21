@@ -1,0 +1,355 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+header {
+    background-color: #1c1c1c;
+    padding: 10px 20px;
+}
+
+header .top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo-section {
+    display: flex;
+    align-items: center;
+}
+
+header .logo-section img {
+    height: 100px;
+    margin-left: 190px;
+    margin-right: 10px;
+
+
+}
+
+header .logo-section h1 {
+    font-size: 24px;
+    margin: 0;
+
+}
+
+header .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header .nav-links li {
+    margin: 0 15px;
+}
+
+header .nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+section a:hover {
+    color: rgb(214, 203, 203);
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #1c1c1c;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar .create-playlist {
+    margin-top: 20px;
+    background-color: #282828;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sidebar .create-playlist h3 {
+    font-size: 14px;
+    margin: 0 0 10px 0;
+}
+
+.sidebar .create-playlist p {
+    font-size: 12px;
+    margin: 0 0 10px 0;
+}
+
+.sidebar .create-playlist button {
+    background-color: #471db9;
+    border: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+main {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+main h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-decoration: none;
+
+}
+
+.artists-grid, .albums-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 20px;
+}
+
+.artist, .album {
+    flex: 0 0 auto;
+    width: 150px;
+    text-align: center;
+}
+
+.artist img, .album img {
+    width: 100%;
+    border-radius: 10px;
+}
+h3 {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+
+    border-radius: 4px}
+
+
+.artist h3, .album h3 {
+    font-size: 14px;
+    margin: 10px 0 0 0;
+}
+section a {
+    text-decoration: none;
+}
+
+footer {
+    background-color: #1c1c1c;
+    padding: 20px;
+    text-align: center;
+    font-size: 12px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #471db9;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+#s {
+    margin: 20px 20% 20px 20%;
+    background-color: #121212;
+    padding: 10px;
+    text-align: center;
+}
+h1, h2, h3{
+    font-family: 'Bitstream Vera Serif Bold';
+}
+#s h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 250%;
+}
+
+
+#s h2 ~ h3 {
+    color: #ffffff;
+}
+
+#s h2 {
+    color: #ffffff;
+}
+#ss {
+    margin: 20px 20% 20px 20%;
+    background-color: #121212;
+    padding: 10px;
+    text-align: center;
+}
+
+
+#ss h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 250%;
+}
+
+
+#ss h2 ~ h3 {
+    color: #ffffff;
+}
+
+#ss h2 {
+    color: #ffffff;
+}
+#sss {
+    margin: 20px 20% 20px 20%;
+    background-color: #121212;
+    padding: 10px;
+    text-align: center;
+}
+
+
+#sss h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 250%;
+}
+
+
+#sss h2 ~ h3 {
+    color: #ffffff;
+}
+
+#sss h2 {
+    color: #ffffff;
+}
+#ssss {
+    margin: 20px 20% 20px 20%;
+    background-color: #121212;
+    padding: 10px;
+    text-align: center;
+}
+
+
+#ssss h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 250%;
+}
+
+
+#ssss h2 ~ h3 {
+    color: #ffffff;
+}
+
+#ssss h2 {
+    color: #ffffff;
+}
+fieldset {
+    border: 1px solid #471db9; 
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+fieldset legend {
+    padding: 5px 10px;
+    background-color: #471db9; 
+    color: white;
+    border-radius: 8px;
+}
+
+.questions {
+    margin: 10px 0;
+    list-style: none;
+}
+
+label, input {
+    display: inline-block;
+    width: 30%;
+}
+label {
+    font-weight: bold;
+}
+
+.questions label, .questions input {
+    font-weight: inherit;
+    display: initial;
+    width: inherit;
+}
+
+input[type="text"], input[type="email"], input[type="date"], select, textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top : 10px;
+    border: 1px solid #471db9; 
+    border-radius: 8px;
+}
+
+textarea {
+    height: 300px;
+    width: 90%;
+}
+
+button, input[type="button"] {
+    background-color: #471db9; 
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+    width: 150px;
+}
+.tableStyle {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #471db9; 
+}
+
+caption, thead {
+    background-color: #471db9; 
+    color: white;
+}
+
+caption {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+thead th {
+    padding: 10px;
+}
+
+tbody td, tfoot td {
+    padding: 10px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #121212; 
+}
+
+tbody tr:nth-child(even) {
+    background-color: #121212; 
+}
+
+tfoot tr {
+    background-color: #121212;
+    color: white;
+}
+
+.box {
+    width: 60%;
+    margin: 50px auto 50px auto;
+    background-color: #121212;
+    padding: 10px;
+    border: 2px solid #471db9; 
+    border-radius: 8px;
+}
